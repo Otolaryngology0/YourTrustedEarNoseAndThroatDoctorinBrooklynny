@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Doctor Bay Ridge: Your Trusted Family Practice Physician in Brooklyn, NY</title>
+    <meta name="description" content="Family Doctor Bay Ridge offers family practice and primary care for adults, children and seniors, including preventive care, wellness exams and chronic condition management. 380 88th St, Brooklyn, NY 11209. Call 347-428-8180.">
+    <link rel="canonical" href="https://www.newyorkentinstitute.com/">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "Family Doctor Bay Ridge",
+      "telephone": "+13474288180",
+      "url": "https://www.newyorkentinstitute.com/",
+      "medicalSpecialty": "FamilyPractice",
+      "image": "https://sa1s3optim.patientpop.com/640x/filters:format(webp)/sc-assets/prd/practices/2d165661-3878-4fe5-b9f5-9c0eb816b94c/m2stwqbbESH_CwjnS_NlecBX3i-suQjBOvNfKQx1m6SzaALJwR1TqcccJIUYjzTUGjG7dVvfQTpoFmQ9GIxAyO9wBHAkNQ.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "380 88th St",
+        "addressLocality": "Brooklyn",
+        "addressRegion": "NY",
+        "postalCode": "11209",
+        "addressCountry": "US"
+      },
+      "areaServed": "Bay Ridge, Brooklyn, NY",
+      "sameAs": ["https://www.google.com/maps?cid=17933520292482281937"]
+    }
+    </script>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .logo-wrap {
+            text-align: center;
+            padding: 14px;
+            background: black;
+        }
+
+        .logo-wrap img {
+            height: 70px;
+            width: auto;
+            background: white;
+            border-radius: 10px;
+            padding: 6px 12px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, aqua, black);
+            text-align: center;
+            padding: 50px;
+            font-size: 34px;
+            font-weight: bold;
+            color: white;
+            border-bottom: 6px solid aqua;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            box-shadow: 0px 8px 15px rgba(0, 255, 255, 0.4);
+        }
+
+        /* Section */
+        .section {
+            background: linear-gradient(135deg, #001f3f, black);
+            padding: 40px;
+            margin: 30px 0;
+            border-radius: 20px;
+            color: white;
+            box-shadow: 0px 12px 24px rgba(0, 255, 255, 0.5);
+            transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+        }
+
+        .section:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 16px 30px rgba(0, 255, 255, 0.7);
+        }
+
+        .section p, .section li {
+            line-height: 1.8;
+        }
+
+        .section ul {
+            padding-left: 22px;
+        }
+
+        .section li {
+            margin-bottom: 8px;
+        }
+
+        a.kw, .section a {
+            color: aqua;
+        }
+
+        /* Section Titles */
+        h2 {
+            color: white;
+            font-size: 26px;
+            border-bottom: 4px solid white;
+            padding-bottom: 8px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        /* Business Info */
+        .business-info h2 {
+            color: aqua;
+        }
+
+        .business-info {
+            background: black;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0px 6px 14px rgba(0, 255, 255, 0.3);
+        }
+
+        .business-info ul, .business-info li {
+            text-align: left;
+        }
+
+        /* Images */
+        .page-img {
+            width: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+            max-height: 480px;
+            display: block;
+        }
+
+        /* FAQ */
+        .faq h2 {
+            color: aqua;
+        }
+
+        .faq button {
+            width: 100%;
+            background: linear-gradient(to right, aqua, black);
+            color: white;
+            padding: 18px;
+            border: none;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: left;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .faq-item {
+            margin-bottom: 14px;
+        }
+
+        .faq-content {
+            display: none;
+            padding: 15px;
+            background: white;
+            color: black;
+            margin-top: 10px;
+            border-radius: 12px;
+            line-height: 1.7;
+        }
+
+        /* CTA Button */
+        .cta-btn {
+            display: inline-block;
+            background: aqua;
+            color: black !important;
+            font-size: 22px;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .cta-btn:hover {
+            background: white;
+            transform: scale(1.1);
+        }
+
+        /* Keywords */
+        .kw-list {
+            list-style: none;
+            padding: 0 !important;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .kw-list li a {
+            display: inline-block;
+            border: 1px solid aqua;
+            border-radius: 50px;
+            padding: 6px 14px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        /* Google My Business (GMB) Embed */
+        .gmb {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .gmb iframe {
+            width: 100%;
+            border: 0;
+            border-radius: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            header { font-size: 22px; padding: 30px 16px; }
+            .section { padding: 22px; }
+            .section:hover { transform: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-wrap">
+        <img src="https://sa1s3optim.patientpop.com/640x/filters:format(webp)/sc-assets/prd/practices/2d165661-3878-4fe5-b9f5-9c0eb816b94c/m2stwqbbESH_CwjnS_NlecBX3i-suQjBOvNfKQx1m6SzaALJwR1TqcccJIUYjzTUGjG7dVvfQTpoFmQ9GIxAyO9wBHAkNQ.png" alt="Family Doctor Bay Ridge logo">
+    </div>
+    <header>
+        Family Doctor Bay Ridge: Your Trusted Family Practice Physician in Brooklyn, NY
+    </header>
+
+    <div class="container">
+
+        <!-- Business Info -->
+        <div class="section business-info">
+
+<h2>Family Doctor Bay Ridge: A Family Practice Physician Your Whole Household Can Trust</h2>
+
+<p>Good health is built over years, through regular check-ups, honest conversations, timely screenings and a care team that knows your story. For families living in <a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">Brooklyn</a> and throughout <a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">NY</a>, that care team starts with one important person: your <a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">family practice physician</a>. At <strong>Family Doctor Bay Ridge</strong>, we believe that strong primary care is the foundation of a healthier life, and we are proud to serve the families of our community.</p>
+
+<p>If you have ever searched for a <a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">doctor</a> near you and felt overwhelmed by the number of options, you are not alone. People often look for a <a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">top doctor</a> or the <a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">best doctor</a>, but what they truly want is someone who listens, explains things clearly and stays with them over time. In this guide we explain what family medicine includes, how preventive care and chronic condition care work, what to expect at your visits and how to choose the right physician for you and your family. You can reach us at <strong>347-428-8180</strong>, visit us at <strong>380 88th St, Brooklyn, NY 11209</strong>, or go online to <a href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">https://www.newyorkentinstitute.com/</a>.</p>
+
+            <h2>About Our Business</h2>
+            <p><strong>Business Name:</strong> Family Doctor Bay Ridge</p>
+            <p><strong>Phone:</strong> <a href="tel:+13474288180">347-428-8180</a></p>
+            <p><strong>Website:</strong> <a href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">https://www.newyorkentinstitute.com/</a></p>
+            <p><strong>Address:</strong> 380 88th St, Brooklyn, NY 11209</p>
+            <p><strong>Google Maps Listing:</strong> <a href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">View Google Profile</a></p>
+        </div>
+
+        <img class="page-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtlF-bVGu8XQ7A830IjTnSbgEmtnZTFbY0aUpmgYPLHFaADWW7hE_FQaE&s=10" alt="Family doctor consultation at Family Doctor Bay Ridge" loading="lazy" onerror="this.style.display='none'">
+
+        <div class="section">
+
+<h2>What Is a Family Practice Physician?</h2>
+
+<p>A family practice physician is a medical doctor trained to care for patients of all ages, from infants and children to adults and older adults. Unlike specialists who focus on one organ system or one disease, a <a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">family medicine physician</a> looks at the whole person. This broad training allows them to diagnose and treat a wide range of common conditions, manage ongoing health problems and coordinate care when a specialist is needed.</p>
+
+<p>You may also hear this type of clinician called a <a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">general practitioner</a>, and many people use the terms <a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">primary care physician</a> or <a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">primary care doctor</a> to describe the same role. These names overlap. Each one describes the main healthcare provider you see for routine and general health needs, and the first person you call when something feels wrong.</p>
+
+<p>Because family doctors see patients across many life stages, they often understand the full picture: your medical history, your family history, your lifestyle, your stress levels and your goals. That context matters. A symptom that looks minor in isolation may mean something different when your doctor knows your background. This continuity is one of the biggest advantages of having one trusted physician instead of bouncing between walk-in clinics.</p>
+
+<h2>Family Practice, Primary Care and Internal Medicine: How Do They Differ?</h2>
+
+<p>Primary care can be provided by family practice physicians, internists and pediatricians. The main difference is the patient population. Pediatricians focus on children. Doctors who provide <a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">internal medicine services</a> generally focus on adults. Family practice physicians care for patients across the entire age range, which makes them an especially convenient choice for households with more than one generation.</p>
+
+<p>For families, that means parents, children and grandparents can see the same doctor or the same practice. Scheduling is simpler, records stay in one place and your doctor can recognize patterns that run through a family, such as high blood pressure, diabetes or heart disease, and help you act on them early.</p>
+
+        </div>
+
+        <div class="section">
+
+<h2>Preventive Care: The Smartest Investment in Your Health</h2>
+
+<p>The most powerful medicine is often prevention. A <a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">preventive health checkup</a> gives your doctor the chance to review your health history, check your blood pressure, discuss nutrition, sleep and activity, and decide which tests make sense for you. Many conditions, including hypertension, prediabetes and high cholesterol, develop silently. By the time symptoms show up, they may already be affecting your body.</p>
+
+<p>An <a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">annual wellness exam</a> is a natural place to start. It is a chance to look at the whole picture, update your vaccinations, talk about changes since your last visit and set goals for the year ahead. A <a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">routine physical exam</a> adds the hands-on part: checking your heart, lungs, abdomen, reflexes and more, depending on your age and needs. Together, these visits build a record that helps your doctor notice small changes before they become big problems.</p>
+
+<p>Your doctor may also recommend <a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">preventive screenings</a> based on your age, family history and risk factors. These can include blood pressure checks, cholesterol and blood sugar tests, cancer screenings and other tests appropriate for you. Some patients prefer to bundle their care into a <a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">complete health checkup</a>, which brings together a physical exam, lab work and a conversation about next steps in a single, organized process. Which tests are appropriate for you is a decision to make with your physician, since needs differ widely from one person to the next.</p>
+
+<p>A visit focused on prevention commonly covers:</p>
+
+<ul>
+  <li><strong>Review of your history</strong> including medications, allergies, past illnesses and family health background.</li>
+  <li><strong>Vital signs</strong> such as blood pressure, heart rate, weight and temperature.</li>
+  <li><strong>A physical examination</strong> tailored to your age and symptoms.</li>
+  <li><strong>Vaccination review</strong> to make sure you are up to date.</li>
+  <li><strong>Lifestyle discussion</strong> about nutrition, exercise, sleep, stress, tobacco and alcohol.</li>
+  <li><strong>A plan</strong> for any tests, follow-up visits or referrals you may need.</li>
+</ul>
+
+<h2>Managing Chronic Conditions With Ongoing Support</h2>
+
+<p>Living with a long-term condition can feel overwhelming, but you do not have to manage it alone. <a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">Chronic disease management</a> is one of the most important roles of a primary care physician. Conditions such as high blood pressure, diabetes, asthma, high cholesterol and thyroid disorders require regular monitoring, medication review and steady lifestyle support. A doctor who sees you consistently can notice small changes in your numbers or symptoms and respond early, which helps you avoid complications.</p>
+
+<p><a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">Hypertension care</a> is a good example. High blood pressure often has no symptoms, yet over time it can strain the heart, blood vessels and kidneys. Regular blood pressure checks, a conversation about salt intake and activity, and medication when appropriate are the foundations of good care. Your doctor will explain your readings, your targets and what to do between visits, including how to monitor your blood pressure at home if that is recommended for you.</p>
+
+<p><a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">Diabetes care</a> follows a similar pattern of steady attention. It can include blood sugar monitoring, periodic lab tests, medication management, nutrition guidance and checks for the eyes, feet and kidneys, which are commonly affected by the condition. Your family physician coordinates these pieces and refers you to specialists such as an eye doctor, endocrinologist or dietitian when extra expertise is needed.</p>
+
+<p>Good chronic care is a long game, and <a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">long term health management</a> works best when your doctor knows you well. Over the months and years, your physician tracks how your numbers change, adjusts treatment as your life changes and keeps your other providers informed. You will know what to expect, who to call and when to come in.</p>
+
+        </div>
+
+        <img class="page-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGM2IiQt9wxmYkO38w7RIOY_zyljCNI1m15i_9G-58Y88hhtBAgjnGj4tj&s=10" alt="Healthcare visit at Family Doctor Bay Ridge" loading="lazy" onerror="this.style.display='none'">
+
+        <div class="section">
+
+<h2>A Whole-Person Approach to Your Health</h2>
+
+<p>Health is shaped by far more than a single diagnosis. Sleep, stress, relationships, work, nutrition and physical activity all influence how you feel. <a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">Holistic medical care</a> means paying attention to all of these parts of life alongside your symptoms and test results. It does not replace evidence-based medicine. It adds context to it, so that treatment fits the person and not only the condition.</p>
+
+<p>That is also the idea behind <a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">personalized healthcare</a>. A healthy 25-year-old has different needs from a 55-year-old with a family history of heart disease, and a busy parent has different challenges from a retiree. Your physician considers your age, history, preferences and goals before recommending a plan, rather than handing everyone the same checklist.</p>
+
+<p>Strong <a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">patient centered care</a> puts you at the center of those decisions. It means your doctor takes time to listen, explains your options in plain language, respects your questions and values, and does not rush you out of the room. You are a partner in your care. You know your body best, and your physician brings the medical knowledge. Together you decide what to do next.</p>
+
+<p>Many people also look for a <a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">wellness physician</a>, which is simply a doctor who emphasizes staying healthy, not only treating illness. In practice, that means a strong focus on prevention, lifestyle conversation and long-term relationship, all of which are central to good family medicine.</p>
+
+        </div>
+
+        <div class="section">
+
+<h2>Care for Every Generation Under One Roof</h2>
+
+<p>One of the greatest strengths of a family practice is its ability to care for everyone in the household. Parents can schedule their own appointments and bring their children in on the same day. Teenagers can build a trusting relationship with a doctor who has known them since childhood. Grandparents can receive attentive senior care from a physician who understands the whole family dynamic.</p>
+
+<p>For busy Brooklyn families juggling work, school and activities, this convenience is a real benefit. Fewer separate offices means less time spent on logistics and more time focused on health. It also means your doctor can offer more complete advice, because they understand the home environment, the shared habits and the family medical history that influence everyone's well-being.</p>
+
+<h2>How to Choose a Trusted Family Doctor</h2>
+
+<p>The phrase top doctor means something different to everyone. For one person it might be a physician with convenient hours. For another it might be someone who takes extra time to discuss concerns. What most families really want is a <a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">trusted family doctor</a>: someone who is honest, reachable and consistent, and who will still know their names years from now.</p>
+
+<p>Awards and rankings can be a helpful data point, but the qualities that matter most in daily practice are often the simplest ones. Here is what to look for as you decide:</p>
+
+<ul>
+  <li><strong>Credentials and training:</strong> Look for a licensed, board-certified physician with relevant experience.</li>
+  <li><strong>Communication:</strong> Your doctor should welcome questions and explain options clearly.</li>
+  <li><strong>Accessibility:</strong> Reasonable appointment availability and responsive office staff make a big difference.</li>
+  <li><strong>Continuity:</strong> Seeing the same doctor over time leads to better understanding and better care.</li>
+  <li><strong>Respect and empathy:</strong> You should feel heard, comfortable and treated as a partner.</li>
+  <li><strong>Coordination:</strong> A strong physician works well with specialists, labs and hospitals.</li>
+</ul>
+
+<p>Practical steps help too. Check that the office is conveniently located, read recent patient feedback on Google to learn about the experience, call to confirm that your insurance is accepted and ask what services the practice offers. A first appointment is often the best way to see whether you feel comfortable with the doctor and the team.</p>
+
+<h2>What to Expect at Your First Visit</h2>
+
+<p>Starting with a new physician can feel a little uncertain, so knowing what to expect helps. At your first appointment, your doctor will likely ask about your medical history, current symptoms, medications, allergies, past surgeries and your family's health background. This conversation creates a complete picture so that your care is accurate and personalized.</p>
+
+<p>You may also have a physical examination, vital signs checked and a discussion about your health goals. If tests or screenings are recommended, your doctor will explain why and what the results could mean. Please ask questions at every step. There are no silly questions when it comes to your health.</p>
+
+<p>A little preparation helps you get the most out of the visit. Consider bringing:</p>
+
+<ul>
+  <li>Your insurance card and a photo ID.</li>
+  <li>A list of all medications, vitamins and supplements you take, including doses.</li>
+  <li>Records from previous doctors, test results or imaging if you have them.</li>
+  <li>A short list of questions or concerns you want to discuss.</li>
+  <li>Notes about any symptoms, such as when they started and what makes them better or worse.</li>
+</ul>
+
+        </div>
+
+        <div class="section">
+
+<h2>Everyday Habits That Support Your Health</h2>
+
+<p>Visits to the doctor are only one part of staying well. The habits you build every day have a major impact on how you feel now and in the future. Your family physician can help you put these into practice:</p>
+
+<ul>
+  <li><strong>Move regularly.</strong> Aim for consistent physical activity that you enjoy, whether it is walking along the Bay Ridge promenade, cycling or a fitness class.</li>
+  <li><strong>Eat well.</strong> Build meals around vegetables, fruits, whole grains, lean proteins and healthy fats.</li>
+  <li><strong>Prioritize sleep.</strong> Adults generally need seven or more hours of quality sleep each night.</li>
+  <li><strong>Manage stress.</strong> Make time for relaxation, hobbies and time with loved ones.</li>
+  <li><strong>Stay up to date.</strong> Keep up with recommended screenings, vaccines and follow-up visits.</li>
+  <li><strong>Speak up early.</strong> If something feels off, do not wait. Early attention often makes treatment simpler.</li>
+</ul>
+
+<p>Mental and emotional well-being matter too. Stress, anxiety, low mood and burnout affect millions of people, and they can influence sleep, appetite, energy and physical health. A compassionate family physician is often the first person patients feel comfortable talking to about emotional concerns. Your doctor can listen, discuss options and connect you with additional support if you need it. Asking for help is a sign of strength.</p>
+
+<h2>When Should You Call Your Doctor?</h2>
+
+<p>Knowing when to reach out can prevent small issues from becoming bigger ones. Consider contacting your family doctor if you notice persistent fever, an ongoing cough or breathing changes, unexplained weight loss, new or worsening pain, changes in your skin, lasting fatigue, changes in mood or any symptom that worries you. Your doctor can evaluate the issue, recommend testing if needed and guide you toward the right level of care.</p>
+
+<p>Please remember that in a life-threatening emergency, such as chest pain, difficulty breathing, signs of a stroke or severe injury, you should call 911 or go to the nearest emergency room immediately. For everything else, your family doctor is the best first call.</p>
+
+        </div>
+
+        <!-- Conclusion -->
+        <div class="section">
+
+<h2>Schedule Your Visit With Family Doctor Bay Ridge</h2>
+
+<p>Taking the first step toward better health can be as simple as picking up the phone. If you have been putting off a check-up, searching for a new physician or looking for a caring partner in managing your family's health, <strong>Family Doctor Bay Ridge</strong> is ready to help. Call us at <a href="tel:+13474288180" style="color:aqua;">347-428-8180</a>, visit us at 380 88th St, Brooklyn, NY 11209 or go online to <a href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener" style="color:aqua;">https://www.newyorkentinstitute.com/</a> to learn more and request an appointment.</p>
+
+<p>Your health is your most valuable asset, and you deserve a doctor who treats it that way. Let Family Doctor Bay Ridge be the partner your family can count on, today and for years to come.</p>
+
+<p><em>This article is for general educational purposes and does not replace personal medical advice. Please consult a physician about your specific health concerns.</em></p>
+
+<a href="https://www.newyorkentinstitute.com/" class="cta-btn" target="_blank" rel="noopener">Visit our website</a>
+
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="section faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <button onclick="toggleFAQ('faq1', this)">Q1: What does a family practice physician treat?</button>
+                <div id="faq1" class="faq-content">A: A family practice physician provides care for patients of all ages and handles routine check-ups, common illnesses, preventive screenings, vaccinations and the ongoing management of chronic conditions such as high blood pressure and diabetes. They also refer you to specialists when needed.</div>
+            </div>
+
+            <div class="faq-item">
+                <button onclick="toggleFAQ('faq2', this)">Q2: How often should I see my primary care doctor?</button>
+                <div id="faq2" class="faq-content">A: Most healthy adults benefit from an annual wellness exam, while children follow a schedule based on age. If you have a chronic condition or specific risk factors, your doctor may recommend more frequent visits.</div>
+            </div>
+
+            <div class="faq-item">
+                <button onclick="toggleFAQ('faq3', this)">Q3: Can the whole family see the same doctor?</button>
+                <div id="faq3" class="faq-content">A: Yes. One of the main benefits of family practice is that children, parents and grandparents can all receive care from the same physician or practice, making scheduling and record keeping easier.</div>
+            </div>
+
+            <div class="faq-item">
+                <button onclick="toggleFAQ('faq4', this)">Q4: What should I bring to my first appointment?</button>
+                <div id="faq4" class="faq-content">A: Bring your insurance card, a photo ID, a list of your medications and supplements, any previous medical records and a short list of questions or concerns.</div>
+            </div>
+
+            <div class="faq-item">
+                <button onclick="toggleFAQ('faq5', this)">Q5: How do I book an appointment with Family Doctor Bay Ridge?</button>
+                <div id="faq5" class="faq-content">A: Call 347-428-8180 or visit https://www.newyorkentinstitute.com/ to get started. Our office is located at 380 88th St, Brooklyn, NY 11209.</div>
+            </div>
+
+        </div>
+
+        <!-- Keywords -->
+        <div class="section">
+            <h2>Related Services</h2>
+            <ul class="kw-list">
+                <li><a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">Family Practice Physician</a></li>
+                <li><a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">Doctor</a></li>
+                <li><a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">Top Doctor</a></li>
+                <li><a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">Best Doctor</a></li>
+                <li><a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">Primary Care Doctor</a></li>
+                <li><a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">Primary Care Physician</a></li>
+                <li><a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">Family Medicine Physician</a></li>
+                <li><a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">Preventive Health Checkup</a></li>
+                <li><a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">Annual Wellness Exam</a></li>
+                <li><a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">Chronic Disease Management</a></li>
+                <li><a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">Hypertension Care</a></li>
+                <li><a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">Diabetes Care</a></li>
+                <li><a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">Routine Physical Exam</a></li>
+                <li><a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">Holistic Medical Care</a></li>
+                <li><a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">General Practitioner</a></li>
+                <li><a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">Personalized Healthcare</a></li>
+                <li><a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">Internal Medicine Services</a></li>
+                <li><a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">Long Term Health Management</a></li>
+                <li><a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">Preventive Screenings</a></li>
+                <li><a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">Wellness Physician</a></li>
+                <li><a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">Patient Centered Care</a></li>
+                <li><a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">Trusted Family Doctor</a></li>
+                <li><a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">Complete Health Checkup</a></li>
+                <li><a class="kw" href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">Brooklyn</a></li>
+                <li><a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">NY</a></li>
+                <li><a class="kw" href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">Family Doctor Bay Ridge</a></li>
+            </ul>
+        </div>
+
+        <!-- GMB -->
+        <div class="section gmb">
+            <h2>Find Us on Google</h2>
+            <p>380 88th St, Brooklyn, NY 11209 | <a href="tel:+13474288180">347-428-8180</a> | <a href="https://www.google.com/maps?cid=17933520292482281937" target="_blank" rel="noopener">Open our Google listing</a></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.3861282784424!2d-74.02926649999999!3d40.6213658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c245d0473c7921%3A0xf8e0a9b0adaa71d1!2sFamily%20Doctor%20Bay%20Ridge!5e0!3m2!1sen!2s!4v1792230018402!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; <span id="year"></span> Family Doctor Bay Ridge | 380 88th St, Brooklyn, NY 11209 | 347-428-8180 | All Rights Reserved.
+    </footer>
+
+    <script>
+        function toggleFAQ(id, button) {
+            var faqContent = document.getElementById(id);
+            faqContent.style.display = faqContent.style.display === "block" ? "none" : "block";
+        }
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
